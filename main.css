@@ -88,6 +88,13 @@ a {
   height: 540px;
 }
 
+.hero-img-m {
+  background: url("image/menubackground.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 840px;
+}
+
 .wrapper-main {
   background-color: #925c16;
 }
@@ -120,6 +127,10 @@ a {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.wrapper-main .menu-des {
+  border-bottom: 3px #ffffff;
 }
 
 .wrapper-foot {
