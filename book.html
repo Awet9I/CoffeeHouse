@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomePage</title>
+    <title>Book table</title>
     <!---CSS-->
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="book.css" />
   </head>
   <body>
     <div class="wrapper-head">
@@ -25,34 +25,42 @@
 
     <div class="wrapper-hero" id="wrapper-main">
       <div class="hero-content">
-        <h1>Welcome to Coffee House</h1>
+        <h1>Book a table by filling the form</h1>
         <p>
           This is the home page for coffee house. Navigate to the different
           pages of the website using the navigation links above.
         </p>
       </div>
-      <div class="hero-img-i"></div>
+      <div class="hero-img-b"></div>
     </div>
 
-    <!-- Main Contents -->
     <div class="wrapper-main" id="wrapper-main">
       <div class="main-content">
-        <p class="main-p">
-          This site contains 5 different webpages, you can navigate by just
-          clicking menu button at the top of header. The list of other pages are
-          given below:
-        </p>
-        <br />
-        <ul>
-          <li><a href="index.html" class="active">Welcome Page</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="book.html">Book Table</a></li>
-          <li><a href="accessibility.html">Accessibility Page</a></li>
-          <li><a href="topic.html">Topical Information Page</a></li>
-        </ul>
+        <form>
+          <div>
+            <label for="fname">First Name :</label>
+            <input type="text" id="fname" name="fname" />
+          </div>
+          <div>
+            <label for="lname">Last Name :</label>
+            <input type="text" id="lname" name="lname" />
+          </div>
+          <div>
+            <label for="tlf">Phone number :</label>
+            <input type="number" id="tlf" name="tlf" />
+          </div>
+          <div>
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <div>
+            <label for="amount">Number of sits :</label>
+            <input type="number" id="amount" name="amount" />
+          </div>
+          <button class="btn" type="submit">Book</button>
+        </form>
       </div>
     </div>
-
     <!-- Footer -->
     <div class="wrapper-foot">
       <div class="foot-content">

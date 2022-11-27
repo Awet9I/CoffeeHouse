@@ -3,6 +3,7 @@
 body {
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
+  background-color: #3c2506;
 }
 
 h1,
@@ -16,7 +17,7 @@ a {
 }
 
 .wrapper-head {
-  background-color: #925c16;
+  background-color: #cd7700;
   position: fixed;
   z-index: 3;
   width: 100%;
@@ -54,57 +55,44 @@ a {
 .wrapper-hero {
   background-color: #ffffff;
 }
-
 .wrapper-hero .hero-content {
-  padding: 150px 96px 56px 96px;
+  padding: 96px 96px 56px 96px;
   max-width: 1440px;
-  text-align: center;
-}
-
-.wrapper-hero .hero-content h1 {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 56px;
-}
-
-.wrapper-hero .hero-content h2 {
-  font-size: 32px;
-  font-weight: 600;
-}
-
-.wrapper-hero .hero-content a {
-  color: #272727;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.wrapper-hero .hero-img-m {
-  background: url(image/brown-gradient-background.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 840px;
+  margin: 0 auto;
 }
 
 .wrapper-main {
-  position: absolute;
-  top: 0px;
-  right: 5px;
-  bottom: 50px;
-  left: 5px;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: 450px 450px 450px;
+  background-color: #3c2506;
+  padding: 50px 50px 100px 50px;
+}
+.main-content {
+  background-color: #f3daba;
+}
+.wrapper-main .main-content {
+  padding: 100px 96px;
+  max-width: 1440px;
+  margin: 80px auto;
+  border: 2px solid black;
+  border-radius: 25px;
 }
 
-.menu-item {
-  padding-right: 50px;
+.wrapper-main .main-content p h1 {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 24px;
+}
+.item-name {
+  font-size: 30px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+}
+.item-name .item-price {
+  margin-left: 770px;
 }
 
-.menu-des {
-  border-bottom: 2px solid #ebc999;
-  color: #cd7700;
+.item-des {
+  font-family: "Poppins", cursive;
 }
-
 .wrapper-foot {
   background-color: #272727;
 }
