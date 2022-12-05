@@ -6,58 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomePage</title>
     <!---CSS-->
-    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="style/main.css"
+      title="link to css file holding the style of this page"
+    />
   </head>
   <body>
-    <div class="wrapper-head">
-      <div class="head-nav">
+    <!--Header-->
+    <header class="wrapper-head" title="page header">
+      <nav class="head-nav">
         <ul>
           <li class="nav">
-            <a class="nav-home" href="index.html">CoffeeHouse</a>
+            <a
+              class="nav-home"
+              href="index.html"
+              title="home page navigation link"
+              >CoffeeHouse</a
+            >
           </li>
-          <li class="nav"><a href="menu.html">Menu</a></li>
-          <li class="nav"><a href="book.html">Book Table</a></li>
-          <li class="nav"><a href="accesibility.html">Accessibility</a></li>
-          <li class="nav"><a href="topic.html">Topic</a></li>
+          <li class="nav">
+            <a href="menu.html" title="menu page navigation link">Menu</a>
+          </li>
+          <li class="nav">
+            <a href="book.html" title="book table page navigation link"
+              >Book Table</a
+            >
+          </li>
+          <li class="nav">
+            <a
+              href="accesibility.html"
+              title="accessibility page navigation link"
+              >Accessibility</a
+            >
+          </li>
+          <li class="nav">
+            <a href="topic.html" title="topic page navigation link">Topic</a>
+          </li>
         </ul>
-      </div>
-    </div>
-
-    <div class="wrapper-hero" id="wrapper-main">
+      </nav>
+    </header>
+    <!--Top section-->
+    <section class="wrapper-hero" title="top section">
       <div class="hero-content">
-        <h1>Welcome to Coffee House</h1>
-        <p>
-          This is the home page for coffee house. Navigate to the different
-          pages of the website using the navigation links above.
+        <h1 title="home page title">Welcome to Coffee House</h1>
+        <p title="top section paragraph">
+          Welcome to our home page. Navigate to the different pages of the
+          website using the navigation links above or scroll down for more
+          information.
         </p>
       </div>
-      <div class="hero-img-i"></div>
-    </div>
+      <div class="hero-img-i" role="img" title="coffeehouseimage"></div>
+    </section>
 
     <!-- Main Contents -->
-    <div class="wrapper-main" id="wrapper-main">
+    <main class="wrapper-main">
       <div class="main-content">
         <p class="main-p">
-          This site contains 5 different webpages, you can navigate by just
-          clicking menu button at the top of header. The list of other pages are
-          given below:
+          CoffeeHouse is a cafe and an event holder concept. We host events from
+          meetings to weddings in our local that can be docorated to fit your
+          event. We are also a coffeeshop that caters coffee lovers with our
+          specialities. Here you can navigate to our website by clicking the
+          links below:
         </p>
         <br />
         <ul>
-          <li><a href="index.html" class="active">Welcome Page</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="book.html">Book Table</a></li>
-          <li><a href="accessibility.html">Accessibility Page</a></li>
-          <li><a href="topic.html">Topical Information Page</a></li>
+          <li>
+            <a
+              href="index.html"
+              class="active"
+              title="home page navigation link"
+              >Welcome Page</a
+            >
+          </li>
+          <li>
+            <a href="menu.html" title="menu page navigation link">Menu</a>
+          </li>
+          <li>
+            <a href="book.html" title="book table page navigation link"
+              >Book Table</a
+            >
+          </li>
+          <li>
+            <a
+              href="accessibility.html"
+              title="accessibility page navigation link"
+              >Accessibility Page</a
+            >
+          </li>
+          <li>
+            <a href="topic.html" title="topic page navigation link"
+              >Topical Information Page</a
+            >
+          </li>
         </ul>
       </div>
-    </div>
+      <section class="main-content">
+        <h2 style="color: #ebc999" title="åpening hours heading">
+          Åpening Hours
+        </h2>
+        <hr />
+        <p style="color: #ebc999">Manday-Thursday: 10:00-23:00</p>
+        <p style="color: #ebc999">Friday-Sunday: 10:00-00:00</p>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <div class="wrapper-foot">
+    <footer class="wrapper-foot" title="page footer">
       <div class="foot-content">
-        <p>Copyright &copy; Logo 2021. Al rights reserved.</p>
+        <p>Copyright &copy; 2022. All rights reserved.</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

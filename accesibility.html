@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Accessibilty</title>
+    <!---CSS-->
+    <link
+      rel="stylesheet"
+      href="style/main.css"
+      title="link to css file holding the style of this page"
+    />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="wrapper-head" title="page header">
+      <nav class="head-nav">
+        <ul>
+          <li class="nav">
+            <a
+              class="nav-home"
+              href="index.html"
+              title="home page navigation link"
+              >CoffeeHouse</a
+            >
+          </li>
+          <li class="nav">
+            <a href="menu.html" title="menu page navigation link">Menu</a>
+          </li>
+          <li class="nav">
+            <a href="book.html" title="book table page navigation link"
+              >Book Table</a
+            >
+          </li>
+          <li class="nav">
+            <a
+              href="accesibility.html"
+              title="accessibility page navigation link"
+              >Accessibility</a
+            >
+          </li>
+          <li class="nav">
+            <a href="topic.html" title="topic page navigation link">Topic</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="wrapper-hero">
+      <div class="hero-content">
+        <h1>Accessibility Test and Results</h1>
+        <p>
+          This page contains snapshot results of automated tests and breif
+          reflection over the choices of coding style and how it it follows the
+          guidlines and principles provided in Web Content Accessibility
+          Guidelines (WCAG)2 and universal design principles. The results of the
+          automated tests will include snapshots from the automated html tester
+          website which can be
+          <a
+            class="topic-link"
+            href="https://validator.w3.org/"
+            target="_blank"
+          >
+            reached via this link</a
+          >
+          and css automated tester
+          <a class="topic-link" href="https://jigsaw.w3.org/css-validator/">
+            which can be reached here.</a
+          >
+        </p>
+      </div>
+      <div class="hero-content">
+        <h2>Home page automated test result</h2>
+        <img
+          src="./image/htmlChecked.png"
+          alt="automated test result home page"
+        />
+        <hr />
+        <h2>Menu page automated test result</h2>
+        <img
+          src="./image/menuchecked.png"
+          alt="automated test result menu page"
+        />
+        <hr />
+        <h2>Book table page automated test result</h2>
+        <img
+          src="./image/bookchecked.png"
+          alt="automated test result book table page"
+        />
+        <hr />
+        <h2>Book table page automated test result</h2>
+        <img
+          src="./image/bookchecked.png"
+          alt="automated test result book table page"
+        />
+        <hr />
+        <h2>Fun topic page automated test result</h2>
+        <img
+          src="./image/topicChecked.png"
+          alt="automated test result fun topic page"
+        />
+        <hr />
+        <h2>Main css style automated validator result</h2>
+        <img
+          src="./image/cssmain.png"
+          alt="automated test result css code for index file, topic file and accesibility file"
+        />
+        <hr />
+        <h2>Menu css style automated validator result</h2>
+        <img
+          src="./image/cssmenu.png"
+          alt="automated test result css code menu file"
+        />
+        <hr />
+        <h2>Book table css style automated validator result</h2>
+        <img
+          src="./image/cssbook.png"
+          alt="automated test result css code book table file"
+        />
+        <hr />
+      </div>
+      <div class="hero-content">
+        <h3 style="text-align: center">Code Reflection</h3>
+        <p>
+          Besides checking the code on automated tests, I have also based my
+          choices of coding by following the guidelines of Web Content
+          Accessibility Guidelines (WCAG)2 . The full details of the guideline
+          can be found by
+          <a class="topic-link" href="https://www.w3.org/WAI/tutorials/">
+            following this link.</a
+          >
+          In addition, when creating and building this website, I incorporated
+          the ideas of inclusive design and universal design into this website.
+        </p>
+
+        <h4 style="text-align: center">Page structure</h4>
+        <hr />
+        <p>
+          Contents throughout the pages of a website are designed so that they
+          allow efficient navigation and facilitate assistive technologies work.
+          Regions of the pages are defined according to their function and
+          location in the page. This way, assistive technologies and web
+          browsers can identify them easily. Example all pages contain header,
+          navigation list, main content and footer. These regions are
+          distinguished clearly by using different colours and backgrounds.
+          Elements that are used across the pages are also appropriate to their
+          content. For example, table tag is used to present the content of the
+          menu, book table page uses form for the book table form, all pages use
+          list of links to present the navigation links and other contents are
+          presented using section and article tags. Headings are nested
+          logically, starting with heading 1 at the top and decreasing towards
+          the bottom of the page. This way, screen reader softwares can skim
+          through a page in natural manner. Keyboard users will also able to
+          find their contents more efficiently.
+        </p>
+        <hr />
+        <h4 style="text-align: center">Menu</h4>
+        <p>
+          The menu is designed to be consistent throughout the website. It is
+          also easy to distinguish from the rest of the page. The colour of the
+          background and the navigation links combined give good look for the
+          page and it easy to locate as the links change colour when hovered
+          over.
+        </p>
+        <hr />
+        <h4 style="text-align: center">Images</h4>
+        <p>
+          Images in this website are used both for informative and decorative
+          purposes. In some places I have used a div tag and gave this tag a
+          role of image. I came across a solution
+          <a
+            class="topic-link"
+            href="https://www.w3schools.com/cssref/pr_background-image.php"
+          >
+            that can be found here</a
+          >, which worked better for my page look. I also read on one of the
+          guideline of WCAG2 standard guidelines
+          <a
+            class="topic-link"
+            href="https://www.w3.org/WAI/tutorials/page-structure/regions/"
+          >
+            that can be found here</a
+          >, that using WAI-ARIA code a div can define a role of a tag. The alt
+          attribute is not defined in these elements since the tests returned an
+          error becouse of it. The images presented by img tag has good alt
+          description that users with disabilities or if image is not being
+          rendered for some reason, can get another option of understanding the
+          content of the image.
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="wrapper-foot">
+      <div class="foot-content">
+        <p>Copyright &copy; 2022. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -6,37 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book table</title>
     <!---CSS-->
-    <link rel="stylesheet" href="book.css" />
+    <link rel="stylesheet" href="style/book.css" />
   </head>
   <body>
-    <div class="wrapper-head">
-      <div class="head-nav">
+    <!--Header-->
+    <header class="wrapper-head" title="page header">
+      <nav class="head-nav">
         <ul>
           <li class="nav">
-            <a class="nav-home" href="index.html">CoffeeHouse</a>
+            <a
+              class="nav-home"
+              href="index.html"
+              title="home page navigation link"
+              >CoffeeHouse</a
+            >
           </li>
-          <li class="nav"><a href="menu.html">Menu</a></li>
-          <li class="nav"><a href="book.html">Book Table</a></li>
-          <li class="nav"><a href="accesibility.html">Accessibility</a></li>
-          <li class="nav"><a href="topic.html">Topic</a></li>
+          <li class="nav">
+            <a href="menu.html" title="menu page navigation link">Menu</a>
+          </li>
+          <li class="nav">
+            <a href="book.html" title="book table page navigation link"
+              >Book Table</a
+            >
+          </li>
+          <li class="nav">
+            <a
+              href="accesibility.html"
+              title="accessibility page navigation link"
+              >Accessibility</a
+            >
+          </li>
+          <li class="nav">
+            <a href="topic.html" title="topic page navigation link">Topic</a>
+          </li>
         </ul>
-      </div>
-    </div>
-
-    <div class="wrapper-hero" id="wrapper-main">
+      </nav>
+    </header>
+    <!---Section-->
+    <div class="wrapper-hero">
       <div class="hero-content">
-        <h1>Book a table by filling the form</h1>
+        <h1 title="book table title">Book a table by filling the form</h1>
         <p>
-          This is the home page for coffee house. Navigate to the different
-          pages of the website using the navigation links above.
+          On this page you can book a table by specifing the number of people or
+          book the caffeeHouse for an arrangment by choosing your type of event.
+          Our cafe can host upto 50 people for different kind of events. We are
+          located in the city center kongensgata 2.
         </p>
       </div>
-      <div class="hero-img-b"></div>
     </div>
 
-    <div class="wrapper-main" id="wrapper-main">
+    <!--Main content-->
+    <main class="wrapper-main">
       <div class="main-content">
         <form>
+          <div>
+            <label for="event">Choose Event:</label>
+            <select name="events" id="event">
+              <option value="" disabled selected hidden>
+                Please Choose event...
+              </option>
+              <optgroup label="Party">
+                <option value="birthday">Birthday</option>
+                <option value="wedding">Wedding</option>
+              </optgroup>
+              <optgroup label="Meeting">
+                <option value="meetingprivate">Meeting with privacy</option>
+                <option value="meetingcafe">Meeing in cafe</option>
+              </optgroup>
+              <option value="other">other</option>
+            </select>
+          </div>
           <div>
             <label for="fname">First Name :</label>
             <input type="text" id="fname" name="fname" />
@@ -60,11 +99,11 @@
           <button class="btn" type="submit">Book</button>
         </form>
       </div>
-    </div>
+    </main>
     <!-- Footer -->
     <div class="wrapper-foot">
       <div class="foot-content">
-        <p>Copyright &copy; Logo 2021. Al rights reserved.</p>
+        <p>Copyright &copy; 2022. All rights reserved.</p>
       </div>
     </div>
   </body>
